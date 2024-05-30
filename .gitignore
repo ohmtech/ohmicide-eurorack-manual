@@ -1,0 +1,11 @@
+# macOS generated files
+.DS_Store
+
+# Python temporary files
+*.py[cod]
+
+# Build temporary files
+artifacts/
+
+# Sphinx
+_build/

@@ -1,0 +1,3 @@
+[submodule "submodules/gyp-next"]
+	path = submodules/gyp-next
+	url = https://github.com/nodejs/gyp-next.git
