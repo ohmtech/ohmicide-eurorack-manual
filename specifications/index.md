@@ -17,6 +17,7 @@
 - Internal processing bit-depth: 32-bit floating point
 - True Stereo Audio
 - High fidelity Texas Instruments Burr-Brown audio converters
+- Latency: 0.25ms
 
 ## Controls
 

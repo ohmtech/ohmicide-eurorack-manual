@@ -1,12 +1,22 @@
-# Distortion Reference
+# References
+
+## Menus Reference
+
+```{image} menus.svg
+:width: 100%
+:align: center
+```
+
+
+## Distortion Reference
 
 | **Distortion** | **{guilabel}`MOD`** | **{guilabel}`BIAS`** | **Description** |
 | ------------------- |:--------:| :------:| -------------- |
 | Disto   | • | • | It has a nice analog feel. The brightness of the distortion is controllable. |
-| SftClp  | • | • | Waveshaper, symmetrical and soft. |
-| HardClp | • | • | Waveshaper, symmetrical and harder. |
-| StrgrC	 | • | • | Waveshaper, symmetrical and stronger. |
-| Crest	 | • | • | Waveshaper, symmetrical, and not bijective. |
+| SftClp  | • | • | Waveshaper, symmetrical and soft. {guilabel}`MOD` will make it asymmetric. |
+| HardClp | • | • | Waveshaper, symmetrical and harder. {guilabel}`MOD` will make it asymmetric. |
+| StrgrC	 | • | • | Waveshaper, symmetrical and stronger. {guilabel}`MOD` will make it asymmetric. |
+| Crest	 | • | • | Waveshaper, symmetrical, and not bijective. {guilabel}`MOD` will make it asymmetric. |
 | Fezz	 | • | • | Waveshaper asymmetrical. |
 | Fuss	 | • | • | Waveshaper asymmetrical. |
 | Attrac	 | • | • | Multiple states distortion. |
@@ -22,7 +32,7 @@
 | Square	 |   | • | Waveshaped rectifier. Will tend to dry the signal much more than Rectifier. |
 | Lowfi	 | • |   | Slew rate limiter. This is an extreme version of a physical limitation that exists on any amplifier. {guilabel}`MOD` will change the slew rate limit, raising it will give more highs. |
 | Lowrfi	 | • | • | Waveshaped slew rate distortion. |
-| BrwnNz	 | • |   | Random walk on a waveshaper. Mod at 0 will create noise. |
+| BrwnNz	 | • |   | Random walk on a waveshaper. {guilabel}`MOD` at 0 will create noise. |
 | Filter	 | • | • | Waveshaper followed by a resonator low pass filter. The higher the distortion gain, the higher the resonance. {guilabel}`MOD` will change the cutoff frequency. |
 | DwnSpl	 | • | • | Emulates an analogue sample & hold. {guilabel}`MOD` will change the hold time. | 
 | Bitcrsh | • | • | Crushes the bit resolution of the signal. May oscillate when used in the Xxx mode. |
