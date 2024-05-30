@@ -13,7 +13,7 @@ import os
 import sys
 import subprocess
 
-PATH_ROOT = os.path.abspath (os.path.dirname (__file__))
+PATH_THIS = os.path.abspath (os.path.dirname (__file__))
 
 sys.path.insert (0, os.path.join (PATH_THIS, 'submodules', 'gyp-next', 'pylib'))
 import gyp
