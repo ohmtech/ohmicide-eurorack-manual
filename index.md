@@ -1,7 +1,7 @@
 # Ohmicide Eurorack Manual
 
 ```{note}
-This manual covers Ohmicide firmware **v1.1**.
+This manual covers Ohmicide firmware **v1.1.1**.
 Click [here](https://updater.ohmforce.com) to update.
 ```
 
