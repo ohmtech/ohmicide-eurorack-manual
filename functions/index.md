@@ -19,7 +19,16 @@ Each distortion then has 3 variants using the {guilabel}`FAM` switch:
 
 The distortion can be further controlled using the {guilabel}`BIAS` and {guilabel}`MOD` parameters:
 
-For {guilabel}`FAM` Standard and Xxx, the {guilabel}`BIAS` parameter emulates malfunctioning hardware circuirty and adds a DC offset before the distortion is applied. But don't worry, this DC offset is removed later in the signal path. For {guilabel}`FAM` Odd, the {guilabel}`BIAS` parameter controls the distance between harmonics: normally a distortion harmonics are all multiplicative of the fundamental. {guilabel}`FAM` Odd allows to expand or shrink the relation between those harmonics, making it inharmonic.
+For {guilabel}`FAM` Standard and Xxx, the {guilabel}`BIAS` parameter emulates malfunctioning hardware circuirty and adds a DC offset before the distortion is applied. But don't worry, this DC offset is removed later in the signal path.
+
+For {guilabel}`FAM` Odd, the {guilabel}`BIAS` parameter controls the distance between harmonics: normally a distortion harmonics are all multiplicative of the fundamental. {guilabel}`FAM` Odd allows to expand or shrink the relation between those harmonics, making it "inharmonic":
+For example, if we consider a 100 Hz sinus input signal, and {guilabel}`BIAS` at the neutral position, the distortion would generate harmonics at multiples of 100 Hz as shown on the following diagram on the left.
+If we turn the {guilabel}`BIAS` knob slightly on the right, the "harmonics" will expand but won't be multiplicative of the root frequency anymore. Note that the root frequency is preserved.
+
+```{image} fam_o.svg
+:width: 75%
+:align: center
+```
 
 The {guilabel}`MOD` parameter is then specific for each distortion. For example it brings even harmonics for wave shapers, or change the base parameters of the algorithm itself.
 
