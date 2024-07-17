@@ -247,6 +247,10 @@ Same as **Lowfi**, but the operational amplifier integrated circuit also shows s
 
 **Bitcrsh** is a typical bitcrusher. Increasing the {guilabel}`MOD` parameter control makes the effect more intense, and so lower the number of bits used to represent the input signal.
 
+When {guilabel}`MOD` is high (a few bits), and {guilabel}`GAIN` is low, the input signal can be lower than the level of the least significant bit, and the output will be silent.
+
+Conversely (for the same {guilabel}`MOD`) when {guilabel}`BIAS` is far from its center position, the input signal will clip, so that the signal might sit between two consecutive bits, and the output will be silent.
+
 ### Jelly
 
 **Jelly** is a distortion that can't be described with human words. The algorithm is also a total non-sense and yet, here it is.
