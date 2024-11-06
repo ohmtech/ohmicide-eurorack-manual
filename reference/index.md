@@ -116,7 +116,7 @@ Same as **SftClp**, but with a stronger tangent-inverse-shaped curve.
 
 ### Fuss
 
-Same as **Fuss**, but with a different asymmetric curve, with a "folding" similar to **Crest** in the positive values of the input signal.
+Same as **Fezz**, but with a different asymmetric curve, with a "folding" similar to **Crest** in the positive values of the input signal.
 
 ```{image} Fuss.svg
 :width: 75%
