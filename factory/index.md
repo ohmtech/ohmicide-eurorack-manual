@@ -4,7 +4,14 @@ Depending on electrical conditions or ambiant temperature, your module CV and kn
 
 Also, should you have a problem with the module, our support team will ask you to run "test mode" to have a rough idea of what the problem is.
 
-This operation requires a bit of care because the module will need to be powered by your Eurorack case in order to complete successfully. You will also need a simple LFO and VCO.
+This operation requires a bit of care because the module will need to be powered by your Eurorack case in order to complete successfully.
+
+You will also need a simple LFO and VCO:
+- The LFO frequency should be far below 1kHz. For example 1Hz or 10Hz are good values,
+- The VCO frequency should be around 1kHz, but the frequency precision is not critical (eg. 440Hz would work as well),
+- For both the LFO and VCO, the most important is to ensure that they are **as close as possible to 10V peak-to-peak**:
+   - The LFO **must be DC-coupled**, so its voltage swing needs to go from -5V to 5V
+   - The VCO can be DC-coupled or AC-coupled, it just needs to be 10V peak-to-peak
 
 To enter test mode and calibration:
 
@@ -26,7 +33,7 @@ To enter test mode and calibration:
 1. Repeat the previous step for {guilabel}`MOD`, {guilabel}`LPF IN`, {guilabel}`LPF OUT`, {guilabel}`BIAS`, {guilabel}`XOVER`, {guilabel}`TYPE` and {guilabel}`FAM` CVs
 1. Use your VCO in sinus mode and **connect it to the right input {guilabel}`IN` first**
 1. Repeat the previous step with the left input {guilabel}`IN`
-1. Connect a patch cable from {guilabel}`OUT` left to your audio output and make sure a 440Hz tone is playing, press {guilabel}`TYPE`
+1. Connect a patch cable from {guilabel}`OUT` left to your audio output and make sure the 1kHz tone is playing, press {guilabel}`TYPE`
 1. Repeat the previous step with {guilabel}`OUT` right
 1. The "QC passed" stamp appears, which means that your module is in specs (no problem were found) and calibration is complete
 1. Turn off your Eurorack system, and reinstall the module into your rack
